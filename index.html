@@ -1,41 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukesh Kumar Mahato - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <nav class = "nav-bar">
-        
-            <a href="index.html">Home</a> 
-            <a href="about.html">About</a> 
-            <a href="project.html">Project</a> 
-            <a href="contact.html">Contact</a>
-        </nav>
-
-
-        <h1>Portfolio</h1>
-        <br>
-        <div>
-            <h2 >Personal Details</h2>
-            <hr>
-            <h3 for="name">Name: Mukesh Kumar Mahato </h3>
-            <h3 for="name">Address:Gaushala - 11</h3>
-            <hr>            
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">MyPortfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#routine">Routine</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
+    </nav>
 
-        <br>
-        <div>
-            <h2>Aceademic Details</h2>
-            <hr>
-            <h3 for="school">College: Kantipur Engineering College</h3>
-            <h3 for="board">Branch: BCT</h3>
-            <hr>
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h2>WELCOME TO MY PORTFOLIO</h2>
+                <h1>Hello! I'm <span class="highlight">Mukesh Kumar Mahato</span></h1>
+                <p>Student at Kantipur Engineering College. Aspiring Web & App Developer.</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/photo.png" alt="Mukesh Kumar Mahato">
+            </div>
         </div>
+    </header>
 
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-content">
+                <p>I am a dedicated student currently pursuing my degree at <strong>Kantipur Engineering College</strong>. My passion lies in understanding how things work, from the logic behind web applications to the physical wiring of circuits. I enjoy exploring new technologies and continuously expanding my skillset.</p>
+            </div>
+        </div>
+    </section>
 
-    </div>
-    
+    <!-- Skills & Projects Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">SKILLS & LEARNINGS</h2>
+            
+            <div class="skills-grid">
+                <!-- Core Skills -->
+                <div class="skill-category">
+                    <h3>Core Skills</h3>
+                    <ul class="skill-list">
+                        <li>Web Development</li>
+                        <li>Basic App Development</li>
+                        <li>Wiring in Circuits</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Tech -->
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Proteus</span>
+                        <span class="tag">Blender</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Routine Section -->
+    <section id="routine" class="section">
+        <div class="container">
+            <h2 class="section-title">Class Routine</h2>
+            <div style="overflow-x:auto;">
+                <table class="routine-table">
+                    <tr>
+                        <th>Day</th>
+                        <th>07:00-08:40</th>
+                        <th>08:40-10:20</th>
+                        <th>10:20-11:10</th>
+                        <th>11:10-13:40</th>
+                        <th>13:40-15:20</th>
+                    </tr>
+                    <tr>
+                        <td class="day">SUNDAY</td>
+                        <td>Computer Organization<br>CT603 - AS</td>
+                        <td>-</td>
+                        <td>Database System<br>CT652 - NiA</td>
+                        <td class="lab">Database System LAB<br>CT652 - AM+NiA</td>
+                        <td class="lab">Networks LAB<br>CT702 - AKC+BiD</td>
+                    </tr>
+                    <tr>
+                        <td class="day">MONDAY</td>
+                        <td>Computer Organization<br>CT603 - SuS</td>
+                        <td>Web Programming<br>CT302 - UP</td>
+                        <td>-</td>
+                        <td>Python for Data Science<br>ENCT325 - AKK</td>
+                        <td class="lab">Web Programming LAB<br>CT302 - SaS+PrT</td>
+                    </tr>
+                    <tr>
+                        <td class="day">TUESDAY</td>
+                        <td>Web Programming<br>CT302 - UP</td>
+                        <td>Networks & Security<br>CT702 - BiD</td>
+                        <td>-</td>
+                        <td class="lab">Web Programming LAB<br>CT302 - BM+DeB<br><br>Computer Org LAB<br>CT603 - BiD+AS</td>
+                        <td>Probability & Statistics<br>SH602 - DDG</td>
+                    </tr>
+                    <tr>
+                        <td class="day">WEDNESDAY</td>
+                        <td>Database System<br>CT652 - NiA</td>
+                        <td>Probability & Statistics<br>SH602 - DDG</td>
+                        <td>-</td>
+                        <td>Networks & Security<br>CT702 - BiD</td>
+                        <td>Python for Data Science<br>ENCT325 - AKK</td>
+                    </tr>
+                    <tr>
+                        <td class="day">THURSDAY</td>
+                        <td>Networks & Security<br>CT702 - BiD</td>
+                        <td>Database System<br>CT652 - NiA</td>
+                        <td>-</td>
+                        <td class="lab">Database System LAB<br>CT652 - NiA+SaS<br><br>Networks LAB<br>CT702 - AKC+BiD</td>
+                        <td class="lab">Minor Project<br>CT654 - SB+RK</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">CONTACT</h2>
+            <div class="contact-box">
+                <p>Interested in working together? Let's connect!</p>
+                <a href="mailto:contact@example.com" class="btn btn-outline">Send Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mukesh Kumar Mahato. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

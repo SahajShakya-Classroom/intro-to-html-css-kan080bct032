@@ -1,9 +1,0 @@
-.nav-bar
-{
-    display: flex ;
-    justify-content: right;
-    right: 90px;
-    gap: 70px;
-    background-color: rgb(211, 228, 211);
-    color: red;
-}
